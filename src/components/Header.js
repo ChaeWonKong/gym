@@ -13,4 +13,4 @@ const styles = {
     background: "#bbb"
   }
 };
-export default Header;
+export { Header };
