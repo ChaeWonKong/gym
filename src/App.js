@@ -6,7 +6,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import firebaseAuth from "./firebaseAuth.json";
 import reducers from "./reducers";
-import { Header, LoginForm } from "./components";
+import { Header } from "./components";
+import LoginForm from "./components/LoginForm";
 
 class App extends Component {
   componentWillMount() {
