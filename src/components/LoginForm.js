@@ -11,7 +11,7 @@ class LoginForm extends Component {
     return (
       <div style={container}>
         <div style={idContainer}>
-          <label>Email</label>
+          <label style={{ marginRight: 10 }}>Email</label>
           <input
             label="Email"
             placeholder="email@gmail.com"
@@ -20,10 +20,10 @@ class LoginForm extends Component {
         </div>
 
         <div style={pwContainer}>
-          <label>Password</label>
+          <label style={{ marginRight: 10 }}>Password</label>
           <input label="Password" placeholder="password" />
         </div>
-        <button>Login</button>
+        <a className="waves-effect waves-light btn">Login</a>
       </div>
     );
   }
@@ -33,15 +33,23 @@ const styles = {
   container: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
+    marginTop: 50
   },
   idContainer: {
     display: "flex",
-    flexDirection: "row"
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 5
   },
   pwContainer: {
     display: "flex",
-    flexDirection: "row"
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 5,
+    marginBottom: 10
   }
 };
 
