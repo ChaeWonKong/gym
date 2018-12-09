@@ -3,10 +3,12 @@ import { connect } from "react-redux";
 import { emailChanged } from "../actions";
 
 class LoginForm extends Component {
-  onChangeEmail(text) {
-    this.props.emailChanged(text);
+  handleEmailChange(e) {
+    this.props.emailChanged(e.target.value);
   }
+
   render() {
+    console.log(this.props.email);
     const { container, idContainer, pwContainer } = styles;
     return (
       <div style={container}>
@@ -15,7 +17,8 @@ class LoginForm extends Component {
           <input
             label="Email"
             placeholder="email@gmail.com"
-            onChange={this.onChangeEmail.bind(this)}
+            onChange={this.handleEmailChange.bind(this)}
+            value={this.props.email}
           />
         </div>
 
@@ -53,7 +56,13 @@ const styles = {
   }
 };
 
+const mapStateToProps = state => {
+  return {
+    email: state.auth.email
+  };
+};
+
 export default connect(
-  null,
-  emailChanged
+  mapStateToProps,
+  { emailChanged }
 )(LoginForm);
