@@ -17,7 +17,6 @@ class LoginForm extends Component {
   }
 
   render() {
-    console.log(this.props.password);
     const { container, idContainer, pwContainer } = styles;
     return (
       <div style={container}>

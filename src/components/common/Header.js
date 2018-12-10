@@ -14,16 +14,10 @@ class Header extends Component {
             </a>
             <ul className="right hide-on-med-and-down">
               <li>
-                <a href="sass.html">Sass</a>
+                <a href="sass.html">내 정보</a>
               </li>
               <li>
-                <a href="badges.html">Components</a>
-              </li>
-              <li>
-                <a href="collapsible.html">Javascript</a>
-              </li>
-              <li>
-                <a href="mobile.html">Mobile</a>
+                <a href="mobile.html">고객센터</a>
               </li>
             </ul>
           </div>
@@ -31,16 +25,10 @@ class Header extends Component {
 
         <ul className="sidenav" id="mobile-demo">
           <li>
-            <a href="sass.html">Sass</a>
+            <a href="sass.html">내 정보</a>
           </li>
           <li>
-            <a href="badges.html">Components</a>
-          </li>
-          <li>
-            <a href="collapsible.html">Javascript</a>
-          </li>
-          <li>
-            <a href="mobile.html">Mobile</a>
+            <a href="badges.html">고객센터</a>
           </li>
         </ul>
       </div>
