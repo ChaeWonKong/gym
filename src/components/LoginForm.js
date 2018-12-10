@@ -16,6 +16,16 @@ class LoginForm extends Component {
     this.props.loginUser({ email, password });
   }
 
+  handleError() {
+    if (this.props.error) {
+      return (
+        <div className="error" style={styles.errorText}>
+          <p>{this.props.error}</p>
+        </div>
+      );
+    }
+  }
+
   render() {
     const { container, idContainer, pwContainer } = styles;
     return (
@@ -40,6 +50,7 @@ class LoginForm extends Component {
             value={this.props.password}
           />
         </div>
+        {this.handleError()}
         <a
           className="waves-effect waves-light btn"
           onClick={this.handleButtonPress.bind(this)}
@@ -72,13 +83,18 @@ const styles = {
     alignItems: "center",
     marginTop: 5,
     marginBottom: 10
+  },
+  errorText: {
+    color: "red",
+    fontSize: 20
   }
 };
 
 const mapStateToProps = state => {
   return {
     email: state.auth.email,
-    password: state.auth.password
+    password: state.auth.password,
+    error: state.auth.error
   };
 };
 
