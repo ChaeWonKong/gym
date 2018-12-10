@@ -7,7 +7,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import firebaseAuth from "./firebaseAuth.json";
 import reducers from "./reducers";
-import { Header } from "./components/common";
+import { Header, Footer } from "./components/common";
 import LoginForm from "./components/LoginForm";
 import WorkoutList from "./components/WorkoutList";
 
@@ -42,8 +42,9 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <Header headerText="Gym" />
-          <LoginForm />
-          {/* <WorkoutList /> */}
+          {/* <LoginForm /> */}
+          <WorkoutList />
+          <Footer />
         </div>
       </Provider>
     );
