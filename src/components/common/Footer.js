@@ -6,10 +6,10 @@ class Footer extends Component {
     return (
       <div className="footer" style={styles.container}>
         <Link to="/calendar">
-          <i class="far fa-calendar-alt" />
+          <i className="far fa-calendar-alt" />
         </Link>
         <Link to="/">
-          <i class="fas fa-dumbbell" />
+          <i className="fas fa-dumbbell" />
         </Link>
       </div>
     );

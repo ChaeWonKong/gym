@@ -8,11 +8,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import firebaseAuth from "./firebaseAuth.json";
 import reducers from "./reducers";
-import { Header, Footer, Card } from "./components/common";
+import { Header, Footer } from "./components/common";
 import LoginForm from "./components/LoginForm";
-import WorkoutList from "./components/WorkoutList";
-import ExerciseList from "./components/ExerciseList";
-import Calendar from "./components/Calendar";
+import Routers from "./routers/Routers";
 
 class App extends Component {
   componentWillMount() {
@@ -49,15 +47,7 @@ class App extends Component {
             {/* <LoginForm /> */}
             {/* <WorkoutList /> */}
             <Footer />
-            <Route exact path="/" component={WorkoutList} />
-            <Route path="/calendar" component={Calendar} />
-            <Route path="/add" component={ExerciseList} />
-            <Route path="/back" component={Card} />
-            <Route path="/chest" component={Card} />
-            <Route path="/shoulder" component={Card} />
-            <Route path="/waist" component={Card} />
-            <Route path="/arm" component={Card} />
-            <Route path="/leg" component={Card} />
+            <Routers />
           </div>
         </BrowserRouter>
       </Provider>
