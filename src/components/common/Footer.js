@@ -27,7 +27,8 @@ const styles = {
     width: "100%",
     borderTop: "1px solid #bbb",
     fontSize: "20px",
-    color: "#ff8a80"
+    color: "#ff8a80",
+    backgroundColor: "#fff"
   }
 };
 
