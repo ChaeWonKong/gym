@@ -7,7 +7,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import firebaseAuth from "./firebaseAuth.json";
 import reducers from "./reducers";
-import { Header, Footer } from "./components/common";
+import { Header, Footer, Loading } from "./components/common";
 import LoginForm from "./components/LoginForm";
 import WorkoutList from "./components/WorkoutList";
 
