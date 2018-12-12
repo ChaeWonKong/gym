@@ -3,13 +3,12 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import firebase from "firebase";
 import ReduxThunk from "redux-thunk";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
 import firebaseAuth from "./firebaseAuth.json";
 import reducers from "./reducers";
 import { Header, Footer } from "./components/common";
-import LoginForm from "./components/LoginForm";
 import Routers from "./routers/Routers";
 
 class App extends Component {
@@ -44,8 +43,6 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <Header headerText="Gym" />
-            {/* <LoginForm /> */}
-            {/* <WorkoutList /> */}
             <Footer />
             <Routers />
           </div>

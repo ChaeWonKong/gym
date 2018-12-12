@@ -3,12 +3,14 @@ import { Route } from "react-router-dom";
 import WorkoutList from "../components/WorkoutList";
 import Calendar from "../components/Calendar";
 import ExerciseList from "../components/ExerciseList";
+import LoginForm from "../components/LoginForm";
 import { Card } from "../components/common";
 
 const Routers = () => {
   return (
     <Fragment>
       <Route exact path="/" component={WorkoutList} />
+      <Route path="/auth" component={LoginForm} />
       <Route path="/calendar" component={Calendar} />
       <Route path="/add" component={ExerciseList} />
       <Route path="/back" component={Card} />
