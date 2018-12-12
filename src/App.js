@@ -12,6 +12,7 @@ import { Header, Footer, Card } from "./components/common";
 import LoginForm from "./components/LoginForm";
 import WorkoutList from "./components/WorkoutList";
 import ExcersizeList from "./components/ExcersizeList";
+import Calendar from "./components/Calendar";
 
 class App extends Component {
   componentWillMount() {
@@ -49,6 +50,7 @@ class App extends Component {
             {/* <WorkoutList /> */}
             <Footer />
             <Route exact path="/" component={WorkoutList} />
+            <Route path="/calendar" component={Calendar} />
             <Route path="/add" component={ExcersizeList} />
             <Route path="/back" component={Card} />
             <Route path="/chest" component={Card} />

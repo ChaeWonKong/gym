@@ -1,11 +1,16 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
   render() {
     return (
       <div className="footer" style={styles.container}>
-        <i class="far fa-calendar-alt" />
-        <i class="fas fa-dumbbell" />
+        <Link to="/calendar">
+          <i class="far fa-calendar-alt" />
+        </Link>
+        <Link to="/">
+          <i class="fas fa-dumbbell" />
+        </Link>
       </div>
     );
   }
