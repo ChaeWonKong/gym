@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "./common";
 import { Link } from "react-router-dom";
 
-const ExcersizeList = () => {
+const ExerciseList = () => {
   return (
     <div>
       <Link to="/back/">
@@ -27,4 +27,4 @@ const ExcersizeList = () => {
   );
 };
 
-export default ExcersizeList;
+export default ExerciseList;
