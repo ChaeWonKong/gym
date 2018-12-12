@@ -11,6 +11,7 @@ import reducers from "./reducers";
 import { Header, Footer, Card } from "./components/common";
 import LoginForm from "./components/LoginForm";
 import WorkoutList from "./components/WorkoutList";
+import ExcersizeList from "./components/ExcersizeList";
 
 class App extends Component {
   componentWillMount() {
@@ -48,7 +49,7 @@ class App extends Component {
             {/* <WorkoutList /> */}
             <Footer />
             <Route exact path="/" component={WorkoutList} />
-            <Route path="/add" component={LoginForm} />
+            <Route path="/add" component={ExcersizeList} />
             <Route path="/back" component={Card} />
             <Route path="/chest" component={Card} />
             <Route path="/shoulder" component={Card} />
