@@ -4,6 +4,7 @@ import WorkoutList from "../components/WorkoutList";
 import Calendar from "../components/Calendar";
 import ExerciseList from "../components/ExerciseList";
 import LoginForm from "../components/LoginForm";
+import MealPlan from "../components/MealPlan";
 import { Card } from "../components/common";
 
 const Routers = () => {
@@ -12,6 +13,7 @@ const Routers = () => {
       <Route exact path="/" component={WorkoutList} />
       <Route path="/auth" component={LoginForm} />
       <Route path="/calendar" component={Calendar} />
+      <Route path="/mealplan" component={MealPlan} />
       <Route path="/add" component={ExerciseList} />
       <Route path="/back" component={Card} />
       <Route path="/chest" component={Card} />
