@@ -8,8 +8,13 @@ class Footer extends Component {
         <Link to="/calendar">
           <i className="far fa-calendar-alt" />
         </Link>
+
         <Link to="/">
           <i className="fas fa-dumbbell" />
+        </Link>
+
+        <Link to="/mealplan">
+          <i class="fas fa-utensils" />
         </Link>
       </div>
     );
