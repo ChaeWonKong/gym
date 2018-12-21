@@ -14,7 +14,7 @@ class Footer extends Component {
         </Link>
 
         <Link to="/mealplan">
-          <i class="fas fa-utensils" />
+          <i className="fas fa-utensils" />
         </Link>
       </div>
     );
